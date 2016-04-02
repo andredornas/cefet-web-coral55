@@ -1,12 +1,22 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
 
+body {
+  margin: 0;
+}
+
 #recipiente {
   width: 800px;
   margin: 0 auto;
+  background-image: linear-gradient(#f6f1b2, #4599b2);
 }
 
-h1 {
+header {
+  display: inline-block;
+  height: 145px;
+}
+
+header h1 {
   font-family: "Ravie";
   font-size: 36px;
   color: #e90c0c;
@@ -16,7 +26,7 @@ h1 {
 }
 
 header h2 {
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 24px;
   color: #333;
   float: right;
@@ -28,8 +38,16 @@ header h2 em {
   color: #d027aa;
 }
 
+section {
+  display: inline-block;
+  height: 676px;
+  /*margin-left: 154px;*/
+}
+
 aside {
   width: 154px;
+  position: relative;
+  /*left: -154px;*/
   float: left;
 }
 
@@ -39,10 +57,25 @@ aside h2 {
   font-weight: bold;
   color: #333;
   transform: rotate(-90deg);
+  line-height: 154px;
 }
 
-aside {
+img#siri {
+    position: relative;
+    top: -132px;
+    left: -10px;
+}
 
+img#bolhas {
+    position: relative;
+    left: 44px;
+}
+
+img#peixe {
+    position: relative;
+    bottom: 0px;
+    left: -44px;
+    top: 14px;
 }
 
 article {
@@ -50,4 +83,47 @@ article {
   box-sizing: border-box;
   border: solid 1px #aac0ae;
   float: right;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0 10px 54px 10px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+article h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+div.item {
+  width: 100%;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+span.nome {
+  float: left;
+  width: 80%;
+}
+
+span.preco {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+div#ticket{
+  width: 159px;
+  position: absolute;
+  top: 295px;
+  left: -70px;
+}
+
+footer {
+    float: right;
+    margin: 46px 15px 25px 0;
+    position: relative;
+    top: -120px;
 }
