@@ -5,7 +5,7 @@ function loadImage(path) {
 }
 
 function instantiateBubble() {
-    var newBubbleEl = loadImage('images/bolha.png');
+    var newBubbleEl = loadImage('images/bolhas.png');
     newBubbleEl.style.position = 'fixed';
     newBubbleEl.style.transition = 'all 5s linear';
     newBubbleEl.style.bottom = '-50px';

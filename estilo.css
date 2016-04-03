@@ -119,6 +119,11 @@ div#ticket{
   position: absolute;
   top: 295px;
   left: -70px;
+  transition: left 100ms ease-out;
+}
+
+div#ticket:hover {
+  left: 0;
 }
 
 footer {
